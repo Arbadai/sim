@@ -12,6 +12,10 @@ body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Bricolage Gro
 .wrap{max-width:1180px;margin:0 auto;padding:20px 16px 40px}
 h1{font-size:clamp(26px,4vw,40px);margin:0 0 4px;font-weight:800;letter-spacing:-.02em}
 .sub{color:var(--muted);margin:0 0 18px;max-width:62ch}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:6px 16px;flex-wrap:wrap}
+.article{margin-top:6px;padding:7px 14px;border:1px solid var(--accent);border-radius:999px;color:var(--accent);font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap}
+.article:hover{background:var(--accent);color:var(--accent-ink)}
+.article:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .grid{display:grid;grid-template-columns:320px 1fr;gap:16px}
 @media(max-width:860px){.grid{grid-template-columns:1fr}}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
@@ -38,7 +42,7 @@ canvas{display:block;width:100%;height:auto}
 @media(max-width:620px){.charts{grid-template-columns:1fr}}
 .charts h2{font-size:14px;margin:0 0 6px}
 </style></head><body><div class="wrap">
-<h1>Microneedle patch lab</h1>
+<div class="top"><h1>Microneedle patch lab</h1><a class="article" href="https://medium.com/@rabadianu/microneedle-build-project-mn-patch-sim-3a78ef98fe9f?sharedUserId=rabadianu" target="_blank" rel="noopener noreferrer">Accompanying article ↗</a></div>
 <p class="sub">Pick a patch type, tune the needle and the drug, and watch the drug move through the skin. Dots are drug molecules; the graphs update as they go.</p>
 <div class="grid">
 <div class="card">
